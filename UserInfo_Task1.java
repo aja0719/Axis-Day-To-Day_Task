@@ -11,6 +11,7 @@ public class UserInfo_Task1{
     public void CreateUser () {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter the details of User : \n");
         System.out.println("Enter name : ");
         name=sc.nextLine();
         System.out.println("Enter user Id : ");
@@ -38,7 +39,6 @@ public class UserInfo_Task1{
         System.out.println("designation is : "+designation);
         System.out.println();
     }
-
     public static void main(String[] args) {
         UserInfo_Task1 U1 = new UserInfo_Task1();
 

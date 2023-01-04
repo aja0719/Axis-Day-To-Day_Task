@@ -2,12 +2,11 @@ import java.util.jar.Attributes.Name;
 
 public class Day6_JavaBasics {
     //  Global Variables 
-     String name ;
-     static String place="Mumbai";
+     String name ; 
+     static String place="Mumbai";  //Static variable
 
-     public static void main(String[] args) {
+     public static void main(String[] args) {   
         System.out.println(place);
-        System.out.println(name);
 
      }
 public void show() {
