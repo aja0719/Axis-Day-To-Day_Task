@@ -1,0 +1,50 @@
+--------------------------Day 8--------------------------
+Java 
+    Interfaces=>
+             -100% Abstractions
+             -In Interfaces we don't need to use keyword "abstract" for a method ,
+               it'll by default abstract method in Interfaces
+             -It'll can have all the abstract methods
+             -Implemented methods can also with some restrictions.
+             -without default-Static is not allowed in Interfaces.
+             -We can pass variables as a parameters
+        Implements command=>
+               class name Implements InterfaceName{}
+               Multiple Inheritance is allowed in Interfaces.
+               we can Inherits one Interfaces to another Interfaces
+
+-------------------------------------------------------------------------------------------
+Task 1
+     => Company -Retail Shop
+         => Selling several product
+             -cosmetics=>6000 price for bundle
+             -perfumes=>7000 price for bundle
+             -clothes=>5000 price for bundle
+        Tax for each product is 
+           cosmetics tax 3%
+           perfumes tax 7% imported
+           clothes tax 4%
+        in that user cosmetics 
+            cosmetics num of cosmetics user buy
+              Qty * (6000+3%) = total price of cosmetics
+              Qty * (7000+7%) = total price of perfumes
+              Qty * (5000+4%) = total price of clothes
+
+        then sum the total price of buying and give it 2% discount on total 
+
+        Using Interfaces 
+          public Interface Retail {
+            getTotalCost(tax,cost,num);
+            getTotalExtendedCost(cosmetics,perfumes,clothes); // Total cost of the three items
+            getTotalDiscount(TotalCost*098);
+          }
+
+---------------------------------------------------------------------------------------------------------------
+Encapsulation =>
+
+            Process of binding the data under single unit (method)
+            To make that particular field Read only or Write only field
+            
+
+
+
