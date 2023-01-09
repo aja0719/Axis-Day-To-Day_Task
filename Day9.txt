@@ -1,0 +1,129 @@
+----------------------------Day 9 ----------------------------
+Packages =>
+        Process of grouping the files together (class) which is used for particular approach or code block.
+        Inside the Packages we can stores/holds-Classes,Inherited properties,interfaces
+
+        =To compile java Packages - javac .\"FileName".java
+        =Tu execute task - javac -d . class name.java (make sure u are in a same path)
+        =To run - java PackageName.class name
+
+        =To access a class outside another Package use - import PackageName.className;(Full fledged name) 
+        or using extends keyword with(Full fledged name)  or use import Axis.*;
+
+--------------------------------------------------------------------------
+Collection Frameworks =>
+             =>Array 
+                  Collection of similar\homegenous data type stored in a continuos memory or in a structured way.
+                  In java it consider with Object.(Make it Non-Primitive data types)
+                  Array is fixed size nd to overcome this we can use Collections Frameworks.
+                  Syntax: int [] arrayName=new int [size];
+
+                  foreach Loop:Syntax
+                      for(dataType el : arrayName); (Used to get array elements)
+
+                Anonymous array - Array without name
+                    e.g. method (new int [] {1,2,3,4});
+
+                 To clone arrays
+                    int array1[] = array.clone();
+                    or
+                    System.arraycopy();
+
+    ******Method that are created by JVM itself called Protocol methods or default methods*******
+        
+        =>String 
+             Its an array with character types
+             In java it can be  consider as Object.(Make it Non-Primitive data types)
+             String is immutable (we cannot change the address value)
+              
+              Protocols method in String =>
+                  charAt(index); //
+                  check in vs code 
+
+------------------------------------------------------------------------------------------
+Task 1 =>Using Student interfaces
+      create a class Student
+            name,age,place,college,
+
+            static count;
+
+            while(){
+                switch(){
+                    case 1: addStudent();
+                    case 2: displayStudent();
+                    case 3: Exit();
+
+                }
+            }
+
+        methods
+          addStudent();
+          take user input
+          cretae object  of class and u need store it inside class array
+
+          displayStudent();
+
+---------------------------------------------------------------------------------------
+
+Exception Handling :
+     Compile Time error 
+     Run Time error
+       
+        Process of Handling several types of errors at runtime only.
+        Exception occurs at runtime only.
+        Used to maintain normal flow of code
+
+    To handle Exceptions there are two types of blocks
+         1. try and catch blocks
+         2. throw block used for Exception handle
+
+                                      Two types
+             Checked Exceptions                         Unchecked Exceptions
+    Checked at compile time                    Exceptions that occurs at execution time
+IOException - variable level errors               
+            
+
+Unchecked Exceptions=>
+   NullPoint Exception-
+   Arithmetic Exceptions- Mistake in Arithmetic logic e.g. 9/0
+   indexOutOfBound Exception-
+   NumberFormat Exceptions-
+   Collections Exception-
+   File IO Exception-
+
+try-catch block=>
+    All ur logic must be included ur try block
+    All Exceptions Handling included in catch block
+
+Benefits =>
+      
+
+--------------------------------------------------------------
+[17:20] Faculty 67[F]
+public class MainStudentClass {
+    public static void main(String args[]) throws Exception {
+        Student stdObj = new Student();
+        System.out.println("Enter size of array");
+
+        int n = stdObj.sc.nextInt();
+        stdObj.arrayStudent = new Student[n];
+
+        while (true) {
+            System.out.println("Enter Case\n 1:addStudent\n 2:Display\n 3:exit");
+            int choice = stdObj.sc.nextInt();
+            switch (choice) {
+                case 1:
+                    stdObj.addStudent();
+                    break;
+                case 2:
+                    stdObj.displayStudent();
+                    break;
+                case 3:
+                    System.exit(1);
+            }
+        }
+
+    }
+}
+
+
