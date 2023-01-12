@@ -1,0 +1,82 @@
+**********************Day 11**************************
+
+Collections Frameworks=>
+        The Collection in Java is a framework that provides an architecture 
+           to store and manipulate the group of objects.
+
+         Java Collection framework provides many interfaces (Set, List, Queue, Deque) 
+         and classes (ArrayList,Vector,LinkedList, PriorityQueue, HashSet, LinkedHashSet,TreeSet).
+
+      Any Collection class holds only group of objects .
+
+1.ArrayList=>
+      Dynamic array(size is not fixed)
+      It is the implementation of List interfaces.
+      we cannot use primitive data type to store values in ArrayList.
+******************************************************************************
+
+Task 1 : 
+   Create the a class to store the array objects
+while (it.hasNext()) {
+      ListObject obj = (ListObject) it.next(); // it's current value is stored in a object and only iterator will go to
+                                               // next object it.next().
+      System.out.println(obj.name);
+      System.out.println(obj.age);
+      // System.out.println(it.next());
+    }
+
+  Task 2:
+    2.1 implementation of push nd pop using LinkedList
+    2.2 Queue in Collections
+
+    2.3 Create class Student 
+             name,roll no,college ,place ,dept
+           class helperClass
+             HashMap <String(key), Student> studeMap // store all student object in HashMap
+
+              addStudent(); //take student details 
+            Add this object inside hashmap using student roll no
+             
+             SearchStudent();
+              take student roll no - using this check present or not
+                 If yes - Print student details
+                 If no - there is no student like this
+                   
+              deleteStude();
+                 take roll no nd delete tht student
+
+
+                 main()
+                main(){
+            while(true){
+                switch(case){
+                    case 1:addStudent()
+                    case 2:serach();
+                    case 3 :deletestudent();
+                    case 4:exit();
+                }
+            }
+        }
+
+
+                 
+********************************************************************************
+
+Linked List =>
+        Using reference concept instead of pointers 
+        It'll always hold objects
+
+
+
+************************************************************************************
+
+Set = >
+    Each elements in sets must be unique.(Duplication not allowed instead itll neglected)
+        (2 same elements cannot be store in diffn references or variables.)
+    
+
+Map=>
+   Special type of data structure in java has a Key and value pairs
+   in map each key must be unique bt value can holds two values.
+
+HashMap(class) interface of the map.
