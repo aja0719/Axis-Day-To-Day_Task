@@ -1,0 +1,123 @@
+Database Management System=>
+                   -System which is used for the DEFINE(create,ulter,drop) and MANIPULATE(update,insert,delete,select)
+                    the data.
+                   -To store and manage the data.
+       History=>
+           Invented by Michal Widenius in 1979.
+           To built MySQL C and C++ languages used.
+           In 2005 Oracle take over on Database Management System.
+               Datatypes  in MySQL
+            Numeric Datatype 
+                 Int=>
+                    -TINYINT(1 byte) -127 to 127 3DIGIT
+                    -SMALLINT(2 byte) Upto 5 Digits
+                    -MEDIUMINT(3 byte) Upto 8 to 9 DIGIT numbers
+                    -INT (4 byte) upto 11 - 12 DIGIT numbers
+                    -LARGEINT(8 byte)=>BIGINT More than 12 DIGIT numbers 
+                Float=>
+                    -FLOAT (2 byte)
+                    -DOUBLE (8 byte)
+                    -DECIMAl (1 Byte)
+                BOOLEAN=>It'll come under in numbers form
+                     - 1(TRUE)
+                     - 0(FALSE)
+                BIT=>Binary values(0- 64 bits)
+            
+            String data type=>
+
+
+            Date 
+              -DATE (YY-MM-DD)
+              -TIME (HH-MM-SS)
+              -DATETIME(YY-MM-DD:HH-MM-SS)
+              -YEAR
+
+            JSON=>
+
+
+
+
+
+    Data Base in MySQL=>
+            Database is collection of data or information records which is being stored.
+
+        Commands =>
+            create database_name // To create a new database
+            show databases like "database_name" // To search databases
+            drop database "database_name" // To delete database from list 
+            use database_name // To use respective database           
+
+        SCHEMA =>
+           Structure of databases(overview)
+             contains information abt table in your databases nd there values
+             It helps server to understand your data and to run on server.
+
+        Tables in databases
+              Combination of rows and columns to store the data in structured way of display
+              Type of data will be related
+
+              Each table contains-
+                   -table name must be unique
+                   -Its own attributes (Fields) with data type
+
+        //To create a table in a databases
+            create table "table_name(attribute list);
+            e.g. create table student(name CHAR(255),place CHAR(255),DOB DATE);
+        
+    when we try to create any table we must need to include Primary key in our table(To identify each records)
+     Primary key- make it as AutoIncrement (Using AUTO_INCREMENT)
+     
+**************************************************************************************************
+       Alter Table-()
+          The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+          The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+      -To ADD 
+         Alter table "name" Add "name2" datatype
+      -To MODIFY
+         Alter table "name" modify "name2" datatype
+      -To delete column only
+        Alter table "name" drop column "name";
+      -To Rename a column
+        Alter table "name" RENAME column "old col name , new cl name;
+      -To RENAME Table 
+        Alter table "name" RENAME to new table name;
+      -To make primary key
+        Alter table table_name modify id primary key;
+-------------------------------------
+Task 1:MySQL
+   Bank Details=>
+        -customertable
+           -name(CHAR),id(INT),mobile num(INT), email(varchar), card no(BIGINT), pass(varchar);
+
+        -Account 
+           -Id(INT),AccntNumber(BIGINT),AccntBalnc(FLOAT),AccntType(CHAR), id(customerinfo)FOREIGN
+
+           e.g.
+              create table account(accntId int auto_increment primary key, accntNum bigint unique not null,
+                  accntbalnc float not null,accntType CHAR(255) not null,
+                        id int ,foreign key(id) references customerinfo(id));
+
+************************************************************************************************************
+    To create relationship b/w table and data
+       foreign relationship helps us to create foreign relationship b/w table.
+
+       FOREIGN key (customerinfo) references initial table name with primarykey
+
+
+ TO insert values to the table (INSERT RECORDS)
+  1 = Insert into table_name (field1 , field2....)values(v1 ,v2...);
+  2 = Insert into table_name values (v1 , v2 ....);
+
+   To check the values in table
+     select * from table_name;
+
+Update/edit the table
+    update table_name set field-value where name=''(condition can be anything);
+
+To delete specific data
+   delete from table_name where condition;
+
+                   
+
+             
+

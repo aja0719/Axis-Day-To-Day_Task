@@ -1,0 +1,65 @@
+
+To join Tables
+
+   -select field,field1,field2... from table_name inner join table_name2 on table_name.id=table_name2.id;
+
+
+use banksystem;
+
+/*create table bankdemo(id int primary key auto_increment,BankName varchar(255) not null,BankLocation text not null);
+
+-- insert into bankdemo(BankName,BankLocation) values('Axis','Banglore'),('BOD','delhi');*/
+
+/*Alter table customer modify customerphno bigint;
+insert into customer(customername,customeremail,password,customerphno,customercardno) values('nishanth','nishanth@gmail.com','nishanth@123',8434510178,44437389746),('shreeram','shreeran@gmail.com','shreeram@123',9380853755,5566773322);
+
+insert into account(accountno,accounttype,accountbalance,customerid) values(4567839790,'saving',10000,3),(4567839757,'saving',10000,5),(4567839756,'saving',10000,4);
+
+*/select customername,customeremail,accountno,accountbalance,accounttype from customer inner join account ON customer.id=account.customerid;
+
+
+
+
+    .
+    .
+    .
+
+*************************************************************
+Functions in MySQL=>
+   To get current date and time-
+     DATE -  CURDATE();
+     TIME -  TIME();
+
+
+    To sum -To add all the values
+     sum();
+     e.g.
+     select field,field1,SUM(transactionAmt) as totaltransaction from account inner join transaction where account.id = transaction.account.id
+
+    To get count 
+     count();
+
+    To get maximum and minimum
+    Max(); and Min();
+
+    To get average
+     Avg();
+
+    To check condition
+      if
+      ifnull
+***********************************************************************
+  Operators=>
+       and
+       or
+       like
+       In
+       any
+       exists
+       not
+       is(equal to)
+****************************************************************************
+Task 2
+   create a banksystem
+   Tables-bank , customer , account ,transaction , ATM
+   
