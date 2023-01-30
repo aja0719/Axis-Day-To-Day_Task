@@ -1,0 +1,28 @@
+*******************Structural Pattern*****************
+  1. Bridge Patterns=>
+          - A Bridge Pattern says that just "decouple the functional abstraction 
+              from the implementation so that the two can vary independently".
+          - The Bridge Pattern is also known as Handle or Body.
+        
+
+
+ 2.Adapter Pattern =>
+       - An Adapter Pattern says that just "converts the interface of a class 
+           into another interface that a client wants".
+         - The Adapter Pattern is also known as Wrapper.
+         - To combine two interfaces/class to create one more class that has features of that both the classes.
+         e.g. class watch + Class smartphone = class SmartWatch 
+
+
+ 3.Filter Patterns =>
+      -It is used to filter the objects as we need that objects.
+      
+
+
+4. Composite Patterns =>
+      -Using this pattern we can grouping the objects we need.
+      -
+
+
+5.Decorator Pattern =>
+    

@@ -1,0 +1,47 @@
+******************Design Pattern In Software Engineering*******************
+ Design Pattern
+    It help us to represent any type of code in a better way,
+      which results in Development easier and understandable to other developers.
+
+      At the time of Substitutional period of Development developers will face issues to follow the approach.
+      It supports object oriented coding approach.
+
+     -We must use the design patterns during the analysis and requirement phase of SDLC(Software Development Life Cycle).
+     -Design patterns ease the analysis and requirement phase of SDLC by providing information based on prior hands-on experiences
+     -By using the design patterns you can make your code more flexible, reusable and maintainable. 
+
+      Gang of Fours Patterns (GOF)
+      It is introduced by 4 Engrs 
+       Erich Gamma , Johson , Richard , John Vlisside
+    
+    -Interface concepts and its immplementation
+
+
+    There are two types of categories of Design Patterns
+    1. Core Java (JSE) 
+    2. JEE Design Patterns
+
+
+    In Core Java (JSE) Design Patterns are
+     1. Creational Design Pattern
+       It help us to the way of creating objects,hide that objects,clone of that object.
+
+      There are 6 types of Creational Design Patterns are followed by
+
+      1.Singleton 
+          It deals with only creating on object and that can be used in multiple clsses.
+            
+                =>simplest patterns in Creational patterns ,it's one of most commonly used patterns
+                =>singleton patterns which will handle the creation of object,
+                  it will help us make sure that each class in your project must have only one object 
+                =>it will infom that each class which we say that as singleton class the constructor of that class will be private ,and make the instance of that class to be static
+   ***********************************************************************************************   
+      task1 create class bank make this bank class ass single turn (method's bankstatus(open or closed))  method bankstatus(time){check the time is <9-18>}
+       create class called checkBank which have to be use singleton bank object to check bank status by passing the time
+****************************************************************************************************
+  
+     2.Factory method Pattern
+          - A Factory Pattern or Factory Method Pattern says that just define 
+            an interface or abstract class for creating an object but let the subclasses decide 
+             which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
+          - 
