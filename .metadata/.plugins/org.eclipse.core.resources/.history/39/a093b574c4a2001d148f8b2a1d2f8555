@@ -1,0 +1,33 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringmavenApplication implements CommandLineRunner{
+	
+	
+	@Autowired      // It will create object automatically
+	EmployeeRepository empRepository;
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringmavenApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {  // Unimplemented method for SpringmavenApplication
+		// TODO Auto-generated method stub
+		
+		EmployeeRepository emp = new EmployeeRepository();
+		emp.setId(1);
+		emp.setName("Ajay");
+		emp.setDept("IT");
+		emp.setAge(23);
+		emp.setSalary(45000.0);
+		
+		
+	}
+
+}
